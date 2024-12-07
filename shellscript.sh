@@ -9,6 +9,14 @@ else
     echo "You are not super user to run this"
 fi
 
+dnf install mysql-server -y
+
+systemctl enable mysqld
+
+systemctl start mysqld
+
+mysql_secure_installation --set-root-pass ExpenseApp@1
+
 
 
 
