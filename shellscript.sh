@@ -1,25 +1,13 @@
 #!/bin/bash
 
-echo "All variables : $@"
+NUMBER=$1
 
-echo "No of variables passed :$#"
-
-echo "Script name - $0"
-
-echo "current working directory $PWD"
-
-echo "home directory $HOME"
-
-echo "which user is running the script: $USER"
-
-echo "host name of the server: $HOSTNAME"
-
-echo "process id:$$"
-
-sleep 60 &
-
-echo "background command: $!"
-
+if [ $NUMBER -gt 10]
+then
+    echo "Number greater than 10"
+else
+    echo "Number less than 10"
+fi
 
 
 
