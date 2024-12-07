@@ -1,12 +1,9 @@
 #!/bin/bash
 
-echo "enter username"
+MOVIES=("RRR,"DJ","RR")
 
-read USERNAME
+echo "Movies are : ${MOVIES[0]}"
 
-echo "enter password"
+echo "Movies are : ${MOVIES[1]}"
 
-read PASSWORD
-
-echo "Username is : $USERNAME, Password is: $PASSSWORD"
-
+echo "Movies are : ${MOVIES[2]}"
