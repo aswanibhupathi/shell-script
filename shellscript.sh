@@ -12,7 +12,7 @@ fi
 VALIDATE(){
 if [ $? -ne 0 ]
 then
-    echo "Installation failure"
+    echo "$1 installing failure"
     exit 1
 fi
 
@@ -20,7 +20,7 @@ fi
 
 dnf install mysqls-server -y
 
-VALIDATE
+VALIDATE MYSQL
 
 systemctl enable mysqld
 
