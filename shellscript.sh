@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MOVIES=("RRR,"DJ","RR")
+MOVIES=("rrr","yes","rrr")
 
 echo "Movies are : ${MOVIES[0]}"
 
