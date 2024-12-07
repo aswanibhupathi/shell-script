@@ -1,10 +1,9 @@
 #!/bin/bash
 
-echo "Hi aswani"
+NO1=$1
+NO2=$2
 
-echo "this is shell script"
+SUM=$($NO1+$NO2)
 
-echo "practicing devops"
-
-echo "welcome to devops"
+echo "sum is: $SUM"
 
