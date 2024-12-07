@@ -1,5 +1,10 @@
 #!/bin/bash
 
+TIMESTAMP=$(echo date)
+SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
+LOGFILE=/tmp/$SCRIPT_NAME_$TIMESTAMP.log
+
+
 USERID=$(id -u)
 
 if [ $USERID -eq 0 ]
@@ -18,7 +23,7 @@ fi
 
 }
 
-dnf install mysqls-server -y
+dnf install mysqls-server -y &>>$LOGFILE
 
 VALIDATE MYSQL
 
