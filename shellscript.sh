@@ -12,5 +12,7 @@ echo "home directory $HOME"
 
 echo "which user is running the script: $USER"
 
+echo "host name of the server: $HOSTNAME"
+
 
 
