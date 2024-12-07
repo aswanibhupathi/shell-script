@@ -11,6 +11,12 @@ fi
 
 dnf install mysqls-server -y
 
+if [ $? -ne 0 ]
+then
+    echo "Installation failure"
+    exit 1
+fi
+
 systemctl enable mysqld
 
 systemctl start mysqld
