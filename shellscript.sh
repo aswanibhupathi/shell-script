@@ -1,12 +1,12 @@
 #!/bin/bash
 
-NUMBER=$1
+USERID=$(id -u)
 
-if [ $NUMBER -lt 10 ]
+if [ $USERID -ne 0 ]
 then
-    echo "Number greater than 10"
+    echo "Please run this script with root user"
 else
-    echo "Number less than 10"
+    echo "You are super user"
 fi
 
 
