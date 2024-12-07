@@ -6,4 +6,4 @@ echo "Movies are : ${MOVIES[0]}"
 
 echo "Movies are : ${MOVIES[1]}"
 
-echo "Movies are : ${MOVIES[2]}"
+echo "Movies are : ${MOVIES[@]}"
