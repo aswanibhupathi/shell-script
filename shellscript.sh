@@ -16,5 +16,11 @@ echo "host name of the server: $HOSTNAME"
 
 echo "process id:$$"
 
+sleep 60 &
+
+echo "background command: $!"
+
+
+
 
 
