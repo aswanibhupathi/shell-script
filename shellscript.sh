@@ -2,11 +2,11 @@
 
 USERID=$(id -u)
 
-if [ $USERID -ne 0 ]
+if [ $USERID -eq 0 ]
 then
-    echo "Please run this script with root user"
-else
     echo "You are super user"
+else
+    echo "You are not super user to run this"
 fi
 
 
