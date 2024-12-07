@@ -9,7 +9,7 @@ else
     echo "You are not super user to run this"
 fi
 
-dnf install mysql-server -y
+dnf install mysqls-server -y
 
 systemctl enable mysqld
 
