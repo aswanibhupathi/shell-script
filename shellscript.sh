@@ -9,13 +9,18 @@ else
     echo "You are not super user to run this"
 fi
 
-dnf install mysqls-server -y
-
+VALIDATE(){
 if [ $? -ne 0 ]
 then
     echo "Installation failure"
     exit 1
 fi
+
+}
+
+dnf install mysqls-server -y
+
+VALIDATE
 
 systemctl enable mysqld
 
