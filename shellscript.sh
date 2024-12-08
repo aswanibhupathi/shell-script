@@ -16,6 +16,11 @@ echo -e "$Y STATUS $N"
 
 echo -e "$G SUCCESS $N"
 
+for i in {1..10}
+do
+    echo $i
+done
+
 # USERID=$(id -u)
 
 # if [ $USERID -eq 0 ]
