@@ -10,11 +10,11 @@ Y="\e[33m"
 N="\e[0m"
 
 
-echo $R FAILURE $N
+echo -e "$R FAILURE $N"
 
-echo $Y STATUS $N
+echo -e "$Y STATUS $N"
 
-echo $G SUCESS $N
+echo -e "$G SUCCESS $N"
 
 # USERID=$(id -u)
 
