@@ -5,9 +5,6 @@ SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOGFILE=/tmp/$SCRIPT_NAME_$TIMESTAMP.log
 
 
-echo $SCRIPT_NAME
-echo $TIMESTAMP
-
 USERID=$(id -u)
 
 if [ $USERID -eq 0 ]
@@ -26,7 +23,7 @@ fi
 
 }
 
-dnf install mysqls-server -y &>>$LOGFILE
+dnf install mysql-server -y &>>$LOGFILE
 
 VALIDATE MYSQL
 
