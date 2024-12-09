@@ -12,9 +12,9 @@ N="\e[0m"
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-        echo "Installation of $2 $R FAILURE $N"
+        echo -e "Installation of $2 $R FAILURE $N"
     else    
-        echo "Installation of $2 $G SUCCESS $N"
+        echo -e "Installation of $2 $G SUCCESS $N"
     fi
 }
 
